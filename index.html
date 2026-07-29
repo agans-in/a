@@ -1,0 +1,501 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en" style=""><head>
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>AGAN'S | Exquisite Crunches</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600&amp;family=Space+Grotesk:wght@700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-container": "#732c91",
+                        "on-background": "#2f0c33",
+                        "tertiary": "#705d00",
+                        "secondary-fixed-dim": "#ffb778",
+                        "on-primary": "#ffffff",
+                        "surface-container": "#ffe7fb",
+                        "surface-bright": "#fff7fa",
+                        "tertiary-container": "#c9a900",
+                        "outline": "#7f7381",
+                        "surface-tint": "#863fa4",
+                        "surface": "#fff7fa",
+                        "on-tertiary-fixed": "#221b00",
+                        "inverse-surface": "#47224a",
+                        "on-secondary-fixed-variant": "#6c3a00",
+                        "surface-container-high": "#ffdefb",
+                        "on-primary-fixed-variant": "#6b248a",
+                        "surface-container-highest": "#ffd6fc",
+                        "on-surface-variant": "#4e4350",
+                        "on-secondary-fixed": "#2e1500",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#ecb2ff",
+                        "on-tertiary-fixed-variant": "#544600",
+                        "on-surface": "#2f0c33",
+                        "on-primary-container": "#e8a7ff",
+                        "background": "#fff7fa",
+                        "surface-variant": "#ffd6fc",
+                        "secondary-container": "#fd9000",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed-dim": "#e9c400",
+                        "secondary-fixed": "#ffdcc1",
+                        "on-error-container": "#93000a",
+                        "primary": "#590c78",
+                        "inverse-primary": "#ecb2ff",
+                        "inverse-on-surface": "#ffebfa",
+                        "secondary": "#8e4e00",
+                        "on-secondary-container": "#613400",
+                        "tertiary-fixed": "#ffe170",
+                        "on-error": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed": "#320047",
+                        "surface-dim": "#fdcafb",
+                        "outline-variant": "#d1c2d1",
+                        "primary-fixed": "#f8d8ff",
+                        "on-tertiary-container": "#4c3e00",
+                        "surface-container-low": "#ffeffa",
+                        "on-secondary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "80px",
+                        "sm": "12px",
+                        "margin-mobile": "24px",
+                        "lg": "64px",
+                        "md": "32px",
+                        "xl": "120px",
+                        "gutter": "32px",
+                        "xs": "4px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Bricolage Grotesque"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Space Grotesk"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            animation: marquee 40s linear infinite;
+        }
+        .premium-shadow {
+            filter: drop-shadow(0 20px 30px rgba(89, 12, 120, 0.15));
+        }
+        .grain-overlay {
+            background-image: url("https://www.transparenttextures.com/patterns/p6.png");
+            opacity: 0.03;
+        }
+        .text-tight {
+            letter-spacing: -0.05em;
+        }
+        .leading-premium {
+            line-height: 1.8;
+        }
+    
+  @media (max-width: 767px) {
+    .agans-home-hero { min-height: auto !important; padding-bottom: 64px !important; }
+    .agans-hero-product { display: none !important; }
+  }
+  @media (min-width: 768px) and (max-width: 1365px) {
+    .agans-home-hero { padding-bottom: 96px !important; }
+    .agans-product-marquee { margin-top: 32px !important; }
+  }
+</style>
+
+<style id="agans-responsive-fixes">
+  @media (min-width: 768px) {
+    header nav { padding-left: 80px !important; padding-right: 80px !important; }
+    header .agans-desktop-nav { gap: 64px !important; }
+  }
+  header .font-label,
+  header .agans-desktop-nav a,
+  header .agans-order-desktop,
+  .agans-mobile-menu a { font-weight: 700 !important; }
+  header .font-headline { font-family: "Bricolage Grotesque", sans-serif !important; }
+  header .font-label,
+  header .agans-desktop-nav a,
+  header .agans-order-desktop,
+  .agans-mobile-menu a { font-family: "Space Grotesk", sans-serif !important; }
+  .agans-menu-button { display: none; width: 48px; height: 48px; align-items: center; justify-content: center; border: 0; background: transparent; color: #590c78; padding: 0; }
+  .agans-mobile-menu { display: none; border-top: 1px solid rgba(89, 12, 120, 0.08); background: rgba(255, 255, 255, 0.96); backdrop-filter: blur(16px); }
+  .agans-mobile-menu.is-open { display: block; }
+  .agans-mobile-menu a { display: block; min-height: 48px; padding: 14px 24px; font-family: Space Grotesk, sans-serif; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #2f0c33; text-decoration: none; }
+  .agans-mobile-menu a:hover, .agans-mobile-menu a[aria-current="page"] { color: #590c78; background: rgba(89, 12, 120, 0.05); }
+  body.agans-menu-open { overflow: hidden; }
+  .agans-link-button { display: inline-flex; align-items: center; justify-content: center; text-decoration: none; }
+  .agans-field-error { display: block; min-height: 18px; margin-top: 6px; color: #ba1a1a; font-size: 12px; }
+  .agans-form-status { min-height: 24px; color: #4e4350; }
+  @media (max-width: 1024px) {
+    .agans-menu-button { display: inline-flex; }
+    .agans-desktop-nav { display: none !important; }
+    .agans-order-desktop { display: none !important; }
+    header nav { padding-left: 24px !important; padding-right: 24px !important; }
+    footer .container { grid-template-columns: 1fr !important; }
+  }
+  @media (max-width: 1023px) {
+    footer .container { grid-template-columns: 1fr !important; }
+  }
+  @media (max-width: 360px) {
+    .font-handwritten.text-7xl { font-size: 4rem !important; line-height: 1 !important; }
+    .font-headline-xl.text-headline-xl { font-size: 60px !important; }
+    [class*="w-96"][class*="h-96"][class*="bg-white/5"] { display: none !important; }
+  }
+  @media (max-width: 480px) {
+    .rounded-\[40px\] .w-96.h-96 { width: 14rem !important; height: 14rem !important; }
+  }
+</style>
+</head>
+<body class="bg-background text-on-background overflow-x-hidden selection:bg-primary selection:text-white font-body">
+<!-- Header -->
+<header class="w-full top-0 sticky z-50 bg-white/80 backdrop-blur-md border-b border-primary/10">
+<nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-base max-w-[1440px] mx-auto">
+<a class="flex items-center gap-sm no-underline" href="index.html">
+<img alt="AGAN'S Logo" class="h-12 w-auto" src="imgs/agans-mark-primary.png">
+</a>
+<div class="hidden md:flex items-center gap-lg agans-desktop-nav">
+<a class="font-label text-sm text-on-surface hover:text-primary transition-colors tracking-widest uppercase" href="index.html" aria-current="page">Home</a>
+<a class="font-label text-sm text-on-surface hover:text-primary transition-colors tracking-widest uppercase" href="snacks.html">Snacks</a>
+<a class="font-label text-sm text-on-surface hover:text-primary transition-colors tracking-widest uppercase" href="about.html">About</a>
+<a class="font-label text-sm text-on-surface hover:text-primary transition-colors tracking-widest uppercase" href="contact.html">Contact</a>
+</div>
+<div class="flex items-center gap-md">
+<a class="agans-link-button agans-order-desktop px-8 py-3 bg-primary text-white font-label text-xs tracking-widest uppercase rounded-full hover:bg-primary-container transition-all shadow-lg shadow-primary/20 whitespace-nowrap" href="snacks.html">Order Now</a>
+<button class="agans-menu-button" type="button" data-agans-menu-toggle aria-label="Open menu" aria-expanded="false"><span class="material-symbols-outlined">menu</span></button>
+</div>
+</nav>
+<div class="agans-mobile-menu" data-agans-mobile-menu>
+<a href="index.html" aria-current="page">Home</a>
+<a href="snacks.html">Snacks</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="snacks.html">Order Now</a>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="agans-home-hero relative min-h-[85vh] flex items-center bg-gradient-to-br from-white to-surface-container-low overflow-hidden pt-lg">
+<div class="container mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 items-center gap-xl relative z-10 transform transition-all duration-1000 translate-y-0 opacity-100">
+<div class="max-w-2xl">
+<span class="inline-block px-4 py-1 bg-primary/5 text-primary font-label text-xs tracking-[0.2em] rounded-full mb-md uppercase border border-primary/10">Kerala Heritage
+                </span>
+<h1 class="font-headline text-[64px] md:text-[96px] text-primary mb-md leading-[0.9] text-tight font-extrabold">
+                    Elegance in <br><span class="text-secondary italic">Every Crunch.</span>
+</h1>
+<p class="text-lg md:text-xl text-on-surface-variant mb-lg leading-premium max-w-lg">
+                    Experience the artisanal craft of traditional Kerala snacks. Hand-selected ingredients meet time-honored recipes for a truly refined palate.
+                </p>
+<div class="flex flex-col sm:flex-row gap-md">
+<a class="agans-link-button px-10 py-4 bg-primary text-white font-label text-sm tracking-widest uppercase rounded-full hover:bg-primary-container transition-all shadow-xl shadow-primary/20" href="snacks.html">Shop Collection</a>
+<a class="agans-link-button px-10 py-4 bg-white text-primary font-label text-sm tracking-widest uppercase rounded-full border border-primary/20 hover:border-primary transition-all" href="about.html">Our Story</a>
+</div>
+</div>
+<div class="agans-hero-product relative flex justify-center items-center">
+<div class="absolute w-[120%] h-[120%] bg-primary/5 rounded-full blur-[100px] -z-10 animate-pulse"></div>
+<img alt="Premium Banana Chips" class="w-full max-w-[500px] premium-shadow" src="https://lh3.googleusercontent.com/aida/AP1WRLscok2hda7a1BxGQ7fq7ym1OKIhV7DL7FI9ExEU43GMlKsJKh6hwuIXOuOooSTAqLR4w2kjdhCMX1AofsJ61gdYCw4pDGPtT-bl9dloqKrc5O1G2-K0-r7OOFtWNgp7mv-Ccuf-dy7fnPsxHD6gOW7xmdqUJgY2GPa9GDwp4jy6PWl3wLzf1lNqUFbgE-gLvM8WWOr0nuMU2FX_Bxw2agYrCPp6HeMt4WxNjSFn-DHWNaij4SSfEVLZv2eu">
+</div>
+</div>
+<div class="absolute inset-0 grain-overlay pointer-events-none transform transition-all duration-1000 translate-y-0 opacity-100"></div>
+</section>
+<!-- Endless Scrolling Marquee -->
+<section class="agans-product-marquee py-lg bg-white border-y border-primary/5 overflow-hidden">
+<div class="flex whitespace-nowrap animate-marquee transform transition-all duration-1000 translate-y-0 opacity-100">
+<div class="flex gap-xl px-xl shrink-0 items-center">
+<img alt="Pack 1" class="h-48 md:h-64 object-contain opacity-80 hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida/AP1WRLscok2hda7a1BxGQ7fq7ym1OKIhV7DL7FI9ExEU43GMlKsJKh6hwuIXOuOooSTAqLR4w2kjdhCMX1AofsJ61gdYCw4pDGPtT-bl9dloqKrc5O1G2-K0-r7OOFtWNgp7mv-Ccuf-dy7fnPsxHD6gOW7xmdqUJgY2GPa9GDwp4jy6PWl3wLzf1lNqUFbgE-gLvM8WWOr0nuMU2FX_Bxw2agYrCPp6HeMt4WxNjSFn-DHWNaij4SSfEVLZv2eu">
+<img alt="Logo" class="h-24 md:h-32 object-contain grayscale opacity-30" src="imgs/agans-mark-primary.png">
+<img alt="Pack 2" class="h-48 md:h-64 object-contain opacity-80 hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida/AP1WRLuymFArl5qs9wvmZG2EJVNU4Q9n1anMSbeg2F86ADDNrZsNfnJn9qPts_YrZwctONPgAbg4IPqXHlSUK0UM5gh-_oSIASyX-mnqRt9fsdcXP5Vo48ZgdVHySFDzSnuxIA5UCMTF4CDT6htKkwTver0Ks5L03kIdvgL-GPoIAxCAMNFeZ6pKh36j_D_akypxRzzMRnsVrqIjDDVs0El8btqTrjY2OSn7jxQqfHp2bls0rd8i82rFSZrILP8">
+<img alt="Pack 1" class="h-48 md:h-64 object-contain opacity-80 hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida/AP1WRLscok2hda7a1BxGQ7fq7ym1OKIhV7DL7FI9ExEU43GMlKsJKh6hwuIXOuOooSTAqLR4w2kjdhCMX1AofsJ61gdYCw4pDGPtT-bl9dloqKrc5O1G2-K0-r7OOFtWNgp7mv-Ccuf-dy7fnPsxHD6gOW7xmdqUJgY2GPa9GDwp4jy6PWl3wLzf1lNqUFbgE-gLvM8WWOr0nuMU2FX_Bxw2agYrCPp6HeMt4WxNjSFn-DHWNaij4SSfEVLZv2eu">
+<img alt="Logo" class="h-24 md:h-32 object-contain grayscale opacity-30" src="imgs/agans-mark-primary.png">
+<img alt="Pack 2" class="h-48 md:h-64 object-contain opacity-80 hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida/AP1WRLuymFArl5qs9wvmZG2EJVNU4Q9n1anMSbeg2F86ADDNrZsNfnJn9qPts_YrZwctONPgAbg4IPqXHlSUK0UM5gh-_oSIASyX-mnqRt9fsdcXP5Vo48ZgdVHySFDzSnuxIA5UCMTF4CDT6htKkwTver0Ks5L03kIdvgL-GPoIAxCAMNFeZ6pKh36j_D_akypxRzzMRnsVrqIjDDVs0El8btqTrjY2OSn7jxQqfHp2bls0rd8i82rFSZrILP8">
+</div>
+<div class="flex gap-xl px-xl shrink-0 items-center">
+<img alt="Pack 1" class="h-48 md:h-64 object-contain opacity-80 hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida/AP1WRLscok2hda7a1BxGQ7fq7ym1OKIhV7DL7FI9ExEU43GMlKsJKh6hwuIXOuOooSTAqLR4w2kjdhCMX1AofsJ61gdYCw4pDGPtT-bl9dloqKrc5O1G2-K0-r7OOFtWNgp7mv-Ccuf-dy7fnPsxHD6gOW7xmdqUJgY2GPa9GDwp4jy6PWl3wLzf1lNqUFbgE-gLvM8WWOr0nuMU2FX_Bxw2agYrCPp6HeMt4WxNjSFn-DHWNaij4SSfEVLZv2eu">
+<img alt="Logo" class="h-24 md:h-32 object-contain grayscale opacity-30" src="imgs/agans-mark-primary.png">
+<img alt="Pack 2" class="h-48 md:h-64 object-contain opacity-80 hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida/AP1WRLuymFArl5qs9wvmZG2EJVNU4Q9n1anMSbeg2F86ADDNrZsNfnJn9qPts_YrZwctONPgAbg4IPqXHlSUK0UM5gh-_oSIASyX-mnqRt9fsdcXP5Vo48ZgdVHySFDzSnuxIA5UCMTF4CDT6htKkwTver0Ks5L03kIdvgL-GPoIAxCAMNFeZ6pKh36j_D_akypxRzzMRnsVrqIjDDVs0El8btqTrjY2OSn7jxQqfHp2bls0rd8i82rFSZrILP8">
+<img alt="Pack 1" class="h-48 md:h-64 object-contain opacity-80 hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida/AP1WRLscok2hda7a1BxGQ7fq7ym1OKIhV7DL7FI9ExEU43GMlKsJKh6hwuIXOuOooSTAqLR4w2kjdhCMX1AofsJ61gdYCw4pDGPtT-bl9dloqKrc5O1G2-K0-r7OOFtWNgp7mv-Ccuf-dy7fnPsxHD6gOW7xmdqUJgY2GPa9GDwp4jy6PWl3wLzf1lNqUFbgE-gLvM8WWOr0nuMU2FX_Bxw2agYrCPp6HeMt4WxNjSFn-DHWNaij4SSfEVLZv2eu">
+<img alt="Logo" class="h-24 md:h-32 object-contain grayscale opacity-30" src="imgs/agans-mark-primary.png">
+<img alt="Pack 2" class="h-48 md:h-64 object-contain opacity-80 hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida/AP1WRLuymFArl5qs9wvmZG2EJVNU4Q9n1anMSbeg2F86ADDNrZsNfnJn9qPts_YrZwctONPgAbg4IPqXHlSUK0UM5gh-_oSIASyX-mnqRt9fsdcXP5Vo48ZgdVHySFDzSnuxIA5UCMTF4CDT6htKkwTver0Ks5L03kIdvgL-GPoIAxCAMNFeZ6pKh36j_D_akypxRzzMRnsVrqIjDDVs0El8btqTrjY2OSn7jxQqfHp2bls0rd8i82rFSZrILP8">
+</div>
+</div>
+</section>
+<!-- Refined Choice Section -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-surface">
+<div class="text-center mb-xl max-w-3xl mx-auto transform transition-all duration-1000 translate-y-0 opacity-100">
+<span class="font-label text-xs tracking-[0.3em] text-secondary uppercase mb-sm block">A Tale of Two Flavors</span>
+<h2 class="font-headline text-4xl md:text-5xl text-primary font-bold mb-md text-tight">Refined for the Connoisseur.</h2>
+<p class="text-on-surface-variant text-lg leading-premium">Handmade with precision, seasoned with legacy. Choose the profile that speaks to your senses.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md max-w-6xl mx-auto transform transition-all duration-1000 translate-y-0 opacity-100">
+<!-- Premium Card 1 -->
+<div class="group bg-white rounded-xl border border-primary/10 hover:border-primary/30 hover:shadow-2xl transition-all duration-500 flex flex-col items-center text-center mx-auto py-4 px-md max-w-lg">
+<div class="overflow-hidden flex justify-center mb-sm">
+<img alt="Black Pack" class="w-72 h-auto group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/AP1WRLscok2hda7a1BxGQ7fq7ym1OKIhV7DL7FI9ExEU43GMlKsJKh6hwuIXOuOooSTAqLR4w2kjdhCMX1AofsJ61gdYCw4pDGPtT-bl9dloqKrc5O1G2-K0-r7OOFtWNgp7mv-Ccuf-dy7fnPsxHD6gOW7xmdqUJgY2GPa9GDwp4jy6PWl3wLzf1lNqUFbgE-gLvM8WWOr0nuMU2FX_Bxw2agYrCPp6HeMt4WxNjSFn-DHWNaij4SSfEVLZv2eu">
+</div>
+<span class="text-[10px] font-label tracking-[0.2em] text-primary bg-primary/5 px-3 py-1 rounded-full mb-sm uppercase">The Signature</span>
+<h3 class="font-headline text-3xl text-primary mb-sm font-bold tracking-tight">Classic Gold</h3>
+<p class="text-on-surface-variant max-w-xs leading-premium mb-sm">Subtle notes of sea salt and pure coconut oil. The original masterpiece.</p>
+<div class="w-full h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent mb-sm"></div>
+<ul class="space-y-sm text-sm text-on-surface-variant mb-md">
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary rounded-full"></span> 100% Organic Bananas</li>
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary rounded-full"></span> Cold-Pressed Coconut Oil</li>
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-primary rounded-full"></span> Small-Batch Production</li>
+</ul>
+<a class="agans-link-button w-full py-4 border border-primary text-primary font-label text-xs tracking-widest uppercase rounded-full hover:bg-primary hover:text-white transition-all" href="snacks.html">Discover Selection</a>
+</div>
+<!-- Premium Card 2 -->
+<div class="group bg-primary/5 rounded-xl border border-primary/10 hover:border-primary/30 hover:shadow-2xl transition-all duration-500 flex flex-col items-center text-center mx-auto py-4 px-md max-w-lg">
+<div class="overflow-hidden flex justify-center mb-sm">
+<img alt="Yellow Pack" class="w-72 h-auto group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/AP1WRLuymFArl5qs9wvmZG2EJVNU4Q9n1anMSbeg2F86ADDNrZsNfnJn9qPts_YrZwctONPgAbg4IPqXHlSUK0UM5gh-_oSIASyX-mnqRt9fsdcXP5Vo48ZgdVHySFDzSnuxIA5UCMTF4CDT6htKkwTver0Ks5L03kIdvgL-GPoIAxCAMNFeZ6pKh36j_D_akypxRzzMRnsVrqIjDDVs0El8btqTrjY2OSn7jxQqfHp2bls0rd8i82rFSZrILP8">
+</div>
+<span class="text-[10px] font-label tracking-[0.2em] text-secondary bg-secondary/10 px-3 py-1 rounded-full mb-sm uppercase">Bold &amp; Refined</span>
+<h3 class="font-headline text-3xl text-primary mb-sm font-bold tracking-tight">Hot Garlic Noir</h3>
+<p class="text-on-surface-variant max-w-xs leading-premium mb-sm">A sophisticated heat profile balanced with aromatic roasted garlic.</p>
+<div class="w-full h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent mb-sm"></div>
+<ul class="space-y-sm text-sm text-on-surface-variant mb-md">
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-secondary rounded-full"></span> Artisanal Spice Blend</li>
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-secondary rounded-full"></span> Slow-Roasted Aromatics</li>
+<li class="flex items-center gap-2"><span class="w-1 h-1 bg-secondary rounded-full"></span> Preservative-Free Craft</li>
+</ul>
+<a class="agans-link-button w-full py-4 bg-primary text-white font-label text-xs tracking-widest uppercase rounded-full hover:bg-primary-container transition-all" href="snacks.html">Discover Selection</a>
+</div>
+</div>
+</section>
+<!-- Categories -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-white">
+<div class="mb-lg flex justify-between items-end transform transition-all duration-1000 translate-y-0 opacity-100">
+<div>
+<span class="font-label text-xs tracking-widest text-primary uppercase block mb-xs">Curated</span>
+<h2 class="font-headline text-4xl text-primary font-bold text-tight">Explore the Pantry</h2>
+</div>
+<a class="font-label text-xs tracking-widest text-primary border-b border-primary pb-1 hidden md:block" href="snacks.html">VIEW ALL CATEGORIES</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md transform transition-all duration-1000 translate-y-0 opacity-100">
+<div class="group relative overflow-hidden rounded-xl h-[400px]">
+<img alt="Premium golden-brown banana chips with artisanal spices" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAq-pGaG-pBzFekEX26gsq8t_Wn94kQT6FIuiVHlNy5K1ODklrgj1JL-YVArT99A38TCqMNis8nxxELBAkaTvmd3TD3i7Y_-K2Lfe1Bm9nSC7F_XwFrcnG_rL94nhqkJ9RPEM9JZHVLosL_JBCPpHeOauw3xLgjI64f4LXTJ7R9x4q0ZX-MerlWZt-SQNg42DgPotR46CLlg2ftVGoZW0zsJfYm_RMxYRYxaDLwNnxC8zHoDKUFa6kpRQ">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-lg w-full text-white">
+<h3 class="font-headline text-2xl font-bold mb-xs">Heritage Chips</h3>
+<p class="text-xs opacity-80 mb-md font-body">Kettle-cooked to perfection.</p>
+<span class="material-symbols-outlined hover:translate-x-2 transition-transform">arrow_forward</span>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl h-[400px]">
+<img alt="Murukku" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsMiUGEBAsY5X0DxWbglYHCy23BSDK6ntZJcsFevpk-5sBGgIj3BFT-n6RauHF_Uj3B6fv1UgBA6EyzpdR9RBuk94VG_k2JK4XIr2u2IVc3-TMEwCmhCWy8RrScu9CfHTE6GgIm3bncjUr_mKaTGuZf5kibm3psGuAPt3Y_9kRHbrNcEy1yoDatH4AidOR9oaUUcOXtRqwuLIti0fYGqVWWoE1vZrhidAc6cDkT4xbzmM-smURxmP-7w">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-lg w-full text-white">
+<h3 class="font-headline text-2xl font-bold mb-xs">Murukku</h3>
+<p class="text-xs opacity-80 mb-md font-body">Symmetry in spice and texture.</p>
+<span class="material-symbols-outlined hover:translate-x-2 transition-transform">arrow_forward</span>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl h-[400px]">
+<img alt="Sweets" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBt4li24p7gWgjnL1wPKXKwCZWv0CV9U6kK7YhpkFJR4L0OgdkNA0toZxSAG2XuHQE5an82stnsYuevMEAQrb5YDZ9tuejs3EVbAvWfPoPaZQRwzVCKAeI169DFev3eXKOEnIRUBCuuk-FUR4Eu-SQFfOhKYtoSYQuN-ZaiaUCc6J8-iAJ66D6upBVKDk8z7aOfRRjS1saHmwsfNhnvNHBxBy8SX4xv_BI10DSStrqNFOYVj-KpaBXzmA">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-lg w-full text-white">
+<h3 class="font-headline text-2xl font-bold mb-xs">Delicate Sweets</h3>
+<p class="text-xs opacity-80 mb-md font-body">Fine confectionery for festivities.</p>
+<span class="material-symbols-outlined hover:translate-x-2 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Legacy Section -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-primary text-white relative overflow-hidden">
+<div class="container mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-xl relative z-10 transform transition-all duration-1000 translate-y-0 opacity-100">
+<div class="relative order-2 md:order-1">
+<img alt="Legacy" class="rounded-2xl border border-white/20 premium-shadow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSJjHoK0DMSNvqujaOhsrbGTtN2cd-UAWI6OmLCTGvIh2MWDQpNQzpBuBR0TJaEwqWRiQAtGZ224YhcIo4a80C962dpSWfkqPoPCu1k3uxrGHDDvrlM2i9h4kltepwGeeZlXCOAfFzJ65Na5mH6Ek4ok8FcxgrzbGhZAi-fshlPKwCn6lDRa82qH9nqIZ4aPybI2wDwYRJg44JWLJwuHbeVNdERCYe9aCSzN8QR6CnH-Rjf8mgM9qbjyTEQ5pDOZbliU8ECcflKipU">
+<div class="absolute -top-6 -right-6 w-32 h-32 bg-secondary flex items-center justify-center rounded-full border-4 border-primary font-headline text-center leading-none text-white p-4">
+                    THE<br>AGAN'S<br>WAY
+                </div>
+</div>
+<div class="order-1 md:order-2">
+<span class="font-label text-xs tracking-[0.4em] uppercase opacity-60 mb-md block">Our Philosophy</span>
+<h2 class="font-headline text-[48px] md:text-[64px] mb-lg leading-[1] font-bold text-tight">Decades of <br>Perfecting the <br>Moment.</h2>
+<p class="text-lg opacity-80 leading-premium mb-xl max-w-lg">
+                    Since 1984, our family has been committed to a single goal: creating snacks that transcend simple consumption. We treat each batch as an artwork, ensuring the heritage of Kerala is honored in every bite.
+                </p>
+<a class="agans-link-button px-10 py-4 bg-white text-primary font-label text-sm tracking-widest uppercase rounded-full hover:bg-surface transition-all" href="about.html">Explore the Process</a>
+</div>
+</div>
+<div class="absolute top-0 right-0 w-1/2 h-full bg-white/5 skew-x-12 translate-x-1/2 pointer-events-none transform transition-all duration-1000 translate-y-0 opacity-100"></div>
+</section>
+<!-- Newsletter -->
+<section class="px-margin-mobile md:px-margin-desktop bg-background relative overflow-hidden py-lg">
+<div class="container mx-auto max-w-2xl transform transition-all duration-1000 translate-y-0 opacity-100"><div class="bg-surface-container-low border border-primary/10 rounded-[2rem] p-md md:p-lg shadow-xl text-center relative z-10 max-w-2xl mx-auto">
+<span class="font-label text-xs tracking-[0.3em] text-primary uppercase mb-sm block">Connect with the Craft</span>
+<h2 class="font-headline text-4xl md:text-5xl text-primary font-bold mb-md text-tight">Join the Conversation</h2>
+<div class="mb-lg">
+<a class="font-headline text-3xl md:text-[48px] text-secondary italic hover:text-primary transition-colors duration-500" href="contact.html">@agans.in</a>
+</div>
+<div class="flex flex-wrap justify-center gap-md sm:gap-lg mb-lg">
+<a class="group flex flex-col items-center gap-2 min-w-[64px]" href="contact.html">
+<div class="w-12 h-12 rounded-full border border-primary/20 flex items-center justify-center group-hover:border-primary transition-all duration-300">
+<svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</div>
+<span class="font-label text-[10px] tracking-widest uppercase text-on-surface-variant">Instagram</span>
+</a>
+<a class="group flex flex-col items-center gap-2 min-w-[64px]" href="contact.html">
+<div class="w-12 h-12 rounded-full border border-primary/20 flex items-center justify-center group-hover:border-primary transition-all duration-300">
+<span class="material-symbols-outlined text-primary">call</span>
+</div>
+<span class="font-label text-[10px] tracking-widest uppercase text-on-surface-variant">Call</span>
+</a>
+<a class="group flex flex-col items-center gap-2 min-w-[64px]" href="contact.html">
+<div class="w-12 h-12 rounded-full border border-primary/20 flex items-center justify-center group-hover:border-primary transition-all duration-300">
+<span class="material-symbols-outlined text-primary">chat</span>
+</div>
+<span class="font-label text-[10px] tracking-widest uppercase text-on-surface-variant">Whatsapp</span>
+</a>
+</div>
+</div></div>
+<div class="absolute inset-0 grain-overlay pointer-events-none transform transition-all duration-1000 translate-y-0 opacity-100"></div>
+</section>
+</main>
+<footer class="bg-on-background text-white pt-xl pb-md">
+<div class="container mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-xl mb-xl">
+<div class="col-span-1 md:col-span-1">
+<img alt="AGAN'S Logo" class="h-16 w-auto mb-md" src="imgs/agans-mark-white.png">
+<p class="text-sm opacity-50 leading-premium max-w-xs">Crafting exceptional snacking experiences since 1984. From our family to your table.</p>
+</div>
+<div>
+<h4 class="font-label text-xs tracking-widest text-secondary uppercase mb-lg">Collections</h4>
+<ul class="space-y-md text-sm opacity-70">
+<li><a class="hover:opacity-100 transition-opacity" href="snacks.html">Private Reserve</a></li>
+<li><a class="hover:opacity-100 transition-opacity" href="snacks.html">Traditional Favorites</a></li>
+<li><a class="hover:opacity-100 transition-opacity" href="snacks.html">Festival Hampers</a></li>
+<li><a class="hover:opacity-100 transition-opacity" href="snacks.html">New Arrivals</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label text-xs tracking-widest text-secondary uppercase mb-lg">Experience</h4>
+<ul class="space-y-md text-sm opacity-70">
+<li><a class="hover:opacity-100 transition-opacity" href="about.html">Store Locator</a></li>
+<li><a class="hover:opacity-100 transition-opacity" href="contact.html">Bulk &amp; Corporate</a></li>
+<li><a class="hover:opacity-100 transition-opacity" href="about.html">Sustainability</a></li>
+<li><a class="hover:opacity-100 transition-opacity" href="contact.html">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label text-xs tracking-widest text-secondary uppercase mb-lg">Follow</h4>
+<div class="flex gap-md">
+<a class="p-2 border border-white/20 rounded-full hover:border-white transition-all" href="contact.html"><span class="material-symbols-outlined text-sm">chat</span></a>
+<a class="p-2 border border-white/20 rounded-full hover:border-white transition-all" href="contact.html"><span class="material-symbols-outlined text-sm">alternate_email</span></a>
+<a class="p-2 border border-white/20 rounded-full hover:border-white transition-all" href="contact.html"><span class="material-symbols-outlined text-sm">call</span></a></div>
+</div>
+</div>
+<div class="border-t border-white/10 pt-md text-center">
+<p class="text-[10px] font-label tracking-widest opacity-30 uppercase">© 2026 AGAN'S SNACKS. AUTHENTICITY GUARANTEED. PRODUCT OF INDIA.</p>
+</div>
+</footer>
+<script>
+    const observerOptions = { threshold: 0.1 };
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('translate-y-0', 'opacity-100');
+                entry.target.classList.remove('translate-y-10', 'opacity-0');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('section > div').forEach(el => {
+        el.classList.add('transform', 'translate-y-10', 'opacity-0', 'transition-all', 'duration-1000');
+        observer.observe(el);
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<script id="agans-site-script">
+  document.addEventListener('DOMContentLoaded', function () {
+    const toggle = document.querySelector('[data-agans-menu-toggle]');
+    const menu = document.querySelector('[data-agans-mobile-menu]');
+    function closeMenu() {
+      if (!toggle || !menu) return;
+      toggle.setAttribute('aria-expanded', 'false');
+      menu.classList.remove('is-open');
+      document.body.classList.remove('agans-menu-open');
+      const icon = toggle.querySelector('.material-symbols-outlined');
+      if (icon) icon.textContent = 'menu';
+    }
+    if (toggle && menu) {
+      toggle.addEventListener('click', function () {
+        const open = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!open));
+        menu.classList.toggle('is-open', !open);
+        document.body.classList.toggle('agans-menu-open', !open);
+        const icon = toggle.querySelector('.material-symbols-outlined');
+        if (icon) icon.textContent = open ? 'menu' : 'close';
+      });
+      menu.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', closeMenu);
+      });
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') closeMenu();
+      });
+      document.addEventListener('click', function (event) {
+        if (menu.classList.contains('is-open') && !event.target.closest('header')) closeMenu();
+      });
+    }
+
+    document.querySelectorAll('[data-agans-add]').forEach(function (button) {
+      button.addEventListener('click', function () {
+        const toast = document.createElement('div');
+        toast.className = 'fixed top-28 right-6 bg-on-background text-white px-6 py-4 rounded-2xl z-[100] font-label text-[12px] tracking-widest uppercase shadow-xl';
+        toast.textContent = 'ADDED TO YOUR BAG';
+        document.body.appendChild(toast);
+        setTimeout(function () { toast.remove(); }, 1800);
+      });
+    });
+
+    document.querySelectorAll('.agans-contact-form').forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        let valid = true;
+        form.querySelectorAll('.agans-field-error').forEach(function (node) { node.textContent = ''; });
+        form.querySelectorAll('input, select, textarea').forEach(function (field) {
+          if (!field.checkValidity()) {
+            valid = false;
+            const error = form.querySelector('[data-error-for="' + field.id + '"]');
+            if (error) {
+              if (field.validity.valueMissing) error.textContent = 'Please complete this field.';
+              else if (field.validity.typeMismatch) error.textContent = 'Please enter a valid email address.';
+              else if (field.validity.patternMismatch) error.textContent = 'Please enter a valid phone number.';
+              else if (field.validity.tooShort) error.textContent = 'Please add a little more detail.';
+              else error.textContent = 'Please check this field.';
+            }
+          }
+        });
+        const status = form.querySelector('.agans-form-status');
+        if (!valid) {
+          if (status) status.textContent = 'Please fix the highlighted fields.';
+          const firstInvalid = form.querySelector(':invalid');
+          if (firstInvalid) firstInvalid.focus();
+          return;
+        }
+        if (status) status.textContent = 'Your message is ready. Connect a form endpoint to send it.';
+      });
+    });
+  });
+</script>
+</body></html>
